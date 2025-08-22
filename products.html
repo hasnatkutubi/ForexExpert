@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex Expert - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ForexExpert</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link active">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="products-hero">
+            <div class="container">
+                <h1>Our Trading Products</h1>
+                <p>Professional Expert Advisors and Custom Indicators</p>
+            </div>
+        </section>
+
+        <section class="products-filter">
+            <div class="container">
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="ea">Expert Advisors</button>
+                    <button class="filter-btn" data-filter="indicator">Indicators</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-grid">
+            <div class="container">
+                <div class="products-container">
+                    <!-- Expert Advisors -->
+                    <div class="product-card" data-category="ea">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Gold Scalper EA">
+                        </div>
+                        <div class="product-info">
+                            <h3>Gold Scalper EA</h3>
+                            <p class="product-price">$299</p>
+                            <p class="product-description">Advanced scalping robot for XAUUSD with 87% win rate</p>
+                            <div class="product-stats">
+                                <span><i class="fas fa-star"></i> 4.9/5</span>
+                                <span><i class="fas fa-download"></i> 1,234</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn-details" onclick="showProductDetails('gold-scalper')">Details</button>
+                                <button class="btn-download" onclick="downloadProduct('gold-scalper')">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="ea">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="EUR/USD Trend EA">
+                        </div>
+                        <div class="product-info">
+                            <h3>EUR/USD Trend EA</h3>
+                            <p class="product-price">$199</p>
+                            <p class="product-description">Trend following robot for major currency pairs</p>
+                            <div class="product-stats">
+                                <span><i class="fas fa-star"></i> 4.8/5</span>
+                                <span><i class="fas fa-download"></i> 987</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn-details" onclick="showProductDetails('eurusd-trend')">Details</button>
+                                <button class="btn-download" onclick="downloadProduct('eurusd-trend')">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="ea">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Multi-Pair Hedge EA">
+                        </div>
+                        <div class="product-info">
+                            <h3>Multi-Pair Hedge EA</h3>
+                            <p class="product-price">$399</p>
+                            <p class="product-description">Advanced hedging strategy across multiple pairs</p>
+                            <div class="product-stats">
+                                <span><i class="fas fa-star"></i> 4.9/5</span>
+                                <span><i class="fas fa-download"></i> 756</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn-details" onclick="showProductDetails('multi-hedge')">Details</button>
+                                <button class="btn-download" onclick="downloadProduct('multi-hedge')">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Indicators -->
+                    <div class="product-card" data-category="indicator">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Trend Master Indicator">
+                        </div>
+                        <div class="product-info">
+                            <h3>Trend Master Indicator</h3>
+                            <p class="product-price">$99</p>
+                            <p class="product-description">Advanced trend detection with buy/sell signals</p>
+                            <div class="product-stats">
+                                <span><i class="fas fa-star"></i> 4.7/5</span>
+                                <span><i class="fas fa-download"></i> 2,145</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn-details" onclick="showProductDetails('trend-master')">Details</button>
+                                <button class="btn-download" onclick="downloadProduct('trend-master')">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="indicator">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Support Resistance Pro">
+                        </div>
+                        <div class="product-info">
+                            <h3>Support Resistance Pro</h3>
+                            <p class="product-price">$79</p>
+                            <p class="product-description">Automatic support and resistance level detection</p>
+                            <div class="product-stats">
+                                <span><i class="fas fa-star"></i> 4.6/5</span>
+                                <span><i class="fas fa-download"></i> 1,876</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn-details" onclick="showProductDetails('sr-pro')">Details</button>
+                                <button class="btn-download" onclick="downloadProduct('sr-pro')">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="indicator">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=200&width=300" alt="Volume Analysis Pro">
+                        </div>
+                        <div class="product-info">
+                            <h3>Volume Analysis Pro</h3>
+                            <p class="product-price">$129</p>
+                            <p class="product-description">Professional volume analysis with market sentiment</p>
+                            <div class="product-stats">
+                                <span><i class="fas fa-star"></i> 4.8/5</span>
+                                <span><i class="fas fa-download"></i> 1,432</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn-details" onclick="showProductDetails('volume-pro')">Details</button>
+                                <button class="btn-download" onclick="downloadProduct('volume-pro')">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Details Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ForexExpert</h3>
+                    <p>Professional trading solutions for serious traders</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ForexExpert. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

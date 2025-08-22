@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex Expert - Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ForexExpert</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link active">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="services-hero">
+            <div class="container">
+                <h1>Our Professional Services</h1>
+                <p>Comprehensive trading solutions tailored to your needs</p>
+            </div>
+        </section>
+
+        <section class="services-grid">
+            <div class="container">
+                <div class="services-container">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Custom Expert Advisor Development</h3>
+                        <p>Get your own personalized trading robot built from scratch according to your trading strategy and risk preferences.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Custom trading logic implementation</li>
+                            <li><i class="fas fa-check"></i> Advanced risk management</li>
+                            <li><i class="fas fa-check"></i> Backtesting and optimization</li>
+                            <li><i class="fas fa-check"></i> Full source code provided</li>
+                            <li><i class="fas fa-check"></i> 30-day support included</li>
+                        </ul>
+                        <div class="service-price">Starting from $500</div>
+                        <button class="service-btn" onclick="contactService('custom-ea')">Get Quote</button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Custom Indicator Development</h3>
+                        <p>Professional custom indicators designed to enhance your technical analysis and trading decisions.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Unique indicator algorithms</li>
+                            <li><i class="fas fa-check"></i> Multi-timeframe analysis</li>
+                            <li><i class="fas fa-check"></i> Alert system integration</li>
+                            <li><i class="fas fa-check"></i> Visual customization options</li>
+                            <li><i class="fas fa-check"></i> Installation guide included</li>
+                        </ul>
+                        <div class="service-price">Starting from $200</div>
+                        <button class="service-btn" onclick="contactService('custom-indicator')">Get Quote</button>
+                    </div>
+
+                    <div class="service-card featured">
+                        <div class="service-badge">Most Popular</div>
+                        <div class="service-icon">
+                            <i class="fas fa-signal"></i>
+                        </div>
+                        <h3>Premium Trading Signals</h3>
+                        <p>Receive high-quality trading signals with detailed analysis and risk management guidelines.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> 5-10 signals per day</li>
+                            <li><i class="fas fa-check"></i> 85%+ accuracy rate</li>
+                            <li><i class="fas fa-check"></i> Entry, SL, and TP levels</li>
+                            <li><i class="fas fa-check"></i> Market analysis included</li>
+                            <li><i class="fas fa-check"></i> Telegram delivery</li>
+                        </ul>
+                        <div class="service-price">$99/month</div>
+                        <button class="service-btn" onclick="contactService('signals')">Subscribe Now</button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Trading Education & Mentoring</h3>
+                        <p>Learn professional trading strategies and MQL programming through one-on-one mentoring sessions.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Personalized learning plan</li>
+                            <li><i class="fas fa-check"></i> Live trading sessions</li>
+                            <li><i class="fas fa-check"></i> MQL programming basics</li>
+                            <li><i class="fas fa-check"></i> Risk management training</li>
+                            <li><i class="fas fa-check"></i> Ongoing support</li>
+                        </ul>
+                        <div class="service-price">$150/hour</div>
+                        <button class="service-btn" onclick="contactService('mentoring')">Book Session</button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>EA Optimization & Modification</h3>
+                        <p>Improve your existing Expert Advisors with professional optimization and custom modifications.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Performance optimization</li>
+                            <li><i class="fas fa-check"></i> Bug fixes and improvements</li>
+                            <li><i class="fas fa-check"></i> New feature additions</li>
+                            <li><i class="fas fa-check"></i> Code review and analysis</li>
+                            <li><i class="fas fa-check"></i> Testing and validation</li>
+                        </ul>
+                        <div class="service-price">Starting from $100</div>
+                        <button class="service-btn" onclick="contactService('optimization')">Get Quote</button>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>24/7 Technical Support</h3>
+                        <p>Get professional technical support for all your trading tools and strategies.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Round-the-clock support</li>
+                            <li><i class="fas fa-check"></i> Installation assistance</li>
+                            <li><i class="fas fa-check"></i> Troubleshooting help</li>
+                            <li><i class="fas fa-check"></i> Strategy consultation</li>
+                            <li><i class="fas fa-check"></i> Priority response</li>
+                        </ul>
+                        <div class="service-price">$50/month</div>
+                        <button class="service-btn" onclick="contactService('support')">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process">
+            <div class="container">
+                <h2>Our Work Process</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Consultation</h3>
+                        <p>We discuss your requirements and trading goals in detail</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Planning</h3>
+                        <p>Create a detailed plan and timeline for your project</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Development</h3>
+                        <p>Build and test your custom trading solution</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Delivery</h3>
+                        <p>Deliver the final product with documentation and support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Your Trading Journey?</h2>
+                    <p>Contact us today to discuss your requirements and get a custom quote</p>
+                    <a href="contact.html" class="cta-button">Get Started Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ForexExpert</h3>
+                    <p>Professional trading solutions for serious traders</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ForexExpert. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
